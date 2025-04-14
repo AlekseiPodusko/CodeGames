@@ -1,0 +1,79 @@
+/* Убираем все отступы, делаем черный фон на всю страницу */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Контейнер для фона */
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Высота на весь экран */
+    background-image: url("/images/Project-in-use/Barotrauma.jpg"); /* Обратите внимание, что путь изменен */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Переход в темный фон по бокам */
+.background-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+
+/* Текст, который будет поверх картинки */
+.text-overlay {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+/* Главный заголовок */
+.main-title {
+    font-family: 'Press Start 2P', cursive;
+    color: #818CF8;
+    font-size: 48px;
+    font-weight: regular;
+    margin-bottom: 20px;
+}
+
+/* Подзаголовок */
+.sub-title {
+    font-family: 'Roboto', sans-serif;
+    color: #D1D5DB;
+    font-size: 18px;
+    font-weight: regular;
+    margin-bottom: 30px;
+}
+
+/* Кнопка перехода */
+.btn-game {
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* При наведении на кнопку */
+.btn-game:hover {
+    background-color: #6A0DAD;
+}
