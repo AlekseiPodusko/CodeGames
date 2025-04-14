@@ -33,6 +33,14 @@
                                     <p class="text-info"><strong>Редактировать</strong></p>
                                 </a>
                             </c:if>
+                                                        <!-- Удаление продукта (только для ADMIN) -->
+                            <c:if test="${topRole eq 'ADMINISTRATOR'}">
+                                <form method="post" action="deleteProduct" onsubmit="return confirm('Вы уверены, что хотите удалить этот продукт?');">
+                                    <input type="hidden" name="id" value="${product.id}" />
+                                    <button type="submit" class="btn btn-danger btn-sm mt-2">Удалить</button>
+                                </form>
+                            </c:if>
+
                         </div>
                     </div>
                 </div>
