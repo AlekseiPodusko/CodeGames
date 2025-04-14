@@ -33,7 +33,8 @@ import tools.PasswordProtector;
     "/addMoney",
     "/showBuyProduct",
     "/buyProduct",
-    "/showMyPurchases"
+    "/showMyPurchases",
+    "/deleteProduct",
 })
 public class CustomerServlet extends HttpServlet {
     @EJB private UserRolesFacade userRolesFacade;
@@ -225,6 +226,23 @@ public class CustomerServlet extends HttpServlet {
                 request.setAttribute("historys", historys);
                 request.getRequestDispatcher("/WEB-INF/purchases/myPurchases.jsp").forward(request, response);
                 break;
+                case "/deleteProduct":
+            productId = request.getParameter("id");
+            product = productFacade.find(Long.parseLong(productId));
+            List<History> historiesForProduct = historyFacade.findByProduct(product);
+
+            if (historiesForProduct.isEmpty()) {
+                productFacade.remove(product);
+                request.setAttribute("info", "Продукт успешно удален");
+            } else {
+                request.setAttribute("info", "Нельзя удалить продукт, так как были совершены покупки. Удаляй через БД, но проблем будет куча.");
+            }
+            List<Product> products = productFacade.findAll();
+            request.setAttribute("products", products);
+            request.getRequestDispatcher("/listProducts").forward(request, response);
+            break;
+
+            
 
         }
     }
