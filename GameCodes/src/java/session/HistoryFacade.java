@@ -2,6 +2,7 @@
 package session;
 
 import entity.History;
+import entity.Product;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -37,5 +38,12 @@ public class HistoryFacade extends AbstractFacade<History> {
             return null;
         }
     }
+    public List<History> findByProduct(Product product) {
+    return em.createQuery("SELECT h FROM History h WHERE h.product = :product", History.class)
+             .setParameter("product", product)
+             .getResultList();
+}
+
+    
     
 }
