@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/servlets/LoginServlet.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/css/productlist.css</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/session/PictureFacade.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/entity/Product.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/css/addmoney.css</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/WEB-INF/products/listProducts.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/tools/PasswordProtector.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/servlets/GuestServlet.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/build.xml</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/css/main.css</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/servlets/ImageServlet.java</file>
+            <file>jar:file:/C:/Users/ProBebra/Desktop/GameCodes/lib/rest-api-sdk-1.14.0-javadoc.jar!/com/paypal/api/openidconnect/Address.html</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/WEB-INF/products/addCode.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/showMain.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/css/registration.css</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/session/UserFacade.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/session/AbstractFacade.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/WEB-INF/purchases/statistic.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/servlets/CustomerServlet.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/tools/EmailSender.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/entity/User.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/WEB-INF/products/addProduct.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/showLogin.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/entity/History.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/tools/CodeProtector.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/css/style.css</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/entity/Picture.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/servlets/PurchaseServlet.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/session/CodeFacade.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/css/login.css</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/session/HistoryFacade.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/entity/Code.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/WEB-INF/purchases/addMoney.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/WEB-INF/menu.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/servlets/InsertFile.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/servlets/AdminServlet.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/WEB-INF/products/editProduct.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/src/java/servlets/UploadServlet.java</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/css/addproduct.css</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/WEB-INF/purchases/myPurchases.jsp</file>
+            <file>file:/C:/Users/ProBebra/Desktop/GameCodes/web/showRegistration.jsp</file>
+        </group>
+    </open-files>
+</project-private>

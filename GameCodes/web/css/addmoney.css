@@ -1,0 +1,71 @@
+body {
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.add-money-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 5vh; /* Подняли блок выше */
+}
+
+.card {
+    background-color: #1F2937;
+    border: 1px solid #4B0082;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(129, 140, 248, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    color: #818CF8;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    color: #E5E7EB;
+    margin-bottom: 0.5rem;
+}
+
+.input-group-text {
+    background-color: #4B0082;
+    color: #ffffff;
+    border: none;
+}
+
+.form-control {
+    background-color: #374151;
+    color: #ffffff;
+    border: 1px solid #4B0082;
+    border-radius: 0.5rem;
+}
+
+.form-control:focus {
+    border-color: #818CF8;
+    box-shadow: 0 0 10px rgba(129, 140, 248, 0.5);
+    outline: none;
+}
+
+.btn-success {
+    background-color: #4B0082;
+    border: none;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.btn-success:hover {
+    background-color: #6D28D9;
+}
