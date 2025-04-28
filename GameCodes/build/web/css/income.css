@@ -1,0 +1,42 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.income-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.card-income {
+    background-color: #1F2937;
+    border: 1px solid #4B0082;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(129, 140, 248, 0.2);
+}
+
+.card-header-income {
+    font-size: 1.2rem;
+    color: #FBBF24; /* ярко-жёлтый */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-body-income {
+    color: white;
+    text-align: center;
+}
+
+.income-text {
+    font-size: 1.4rem;
+    margin: 0;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap');
+
+/* Убираем все отступы, делаем чёрный фон по всей странице */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000000; /* черный фон на всю страницу */
+}
+
+/* Центрируем форму */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  /* Чтобы форма была по центру на весь экран */
+}
+
+/* Карточка с формой */
+.login-card {
+    background-color: #111827;
+    border: none;
+    padding: 30px;
+    width: 20em;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-title {
+    font-family: 'Press Start 2P', cursive;
+    color: #818CF8;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Метки для полей */
+.form-label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Поля ввода */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: #4b5563;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.form-group input[type="text"]:focus {
+    outline: none;
+    border-color: #818CF8;
+    box-shadow: 0 0 6px rgba(129, 140, 248, 0.3);
+}
+
+/* Кнопка регистрации */
+.btn-login {
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Надпись под формой */
+.login-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.login-footer a {
+    color: #818CF8;
+    text-decoration: none;
+}
