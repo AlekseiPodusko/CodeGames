@@ -1,0 +1,78 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.role-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 20px;
+}
+
+.card {
+    background-color: #1F2937;
+    border: 1px solid #4B0082;
+    border-radius: 12px;
+    width: 340px;
+    box-shadow: 0 0 25px rgba(129, 140, 248, 0.2);
+}
+
+.card-header {
+    font-size: 1.3rem;
+    color: #818CF8;
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #4B0082;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #E5E7EB;
+    font-size: 0.95rem;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    background-color: #111827;
+    border: 1px solid #4B0082;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: #818CF8;
+    box-shadow: 0 0 10px rgba(129, 140, 248, 0.3);
+}
+
+.btn {
+    background-color: #4B0082;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #6A0DAD;
+    transform: scale(1.05);
+}

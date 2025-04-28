@@ -1,0 +1,118 @@
+/* Общие стили для всего тела страницы */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* чисто черный фон */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Стиль для контейнера с альбомом */
+.album {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Стили для строки с карточками */
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Стили для колонки, чтобы карточки располагались красиво */
+.col {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+/* Карточки, в которых размещаются данные */
+.card {
+    position: relative;
+    background-color: #1f2937; /* Темный серо-синий цвет для карточек */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* При наведении на карточку — увеличение и изменение тени */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для содержимого внутри карточки */
+.card-body {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Стили для заголовка карточки */
+.card-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px; /* Увеличен размер шрифта */
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+/* Стили для текста внутри карточки */
+.card-text {
+    font-size: 14px;
+    color: #d1d5db;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Стили для отображения цены */
+.card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #818cf8;
+    margin-bottom: 15px;
+}
+
+/* Новый стиль для кода, чтобы сделать его более видимым */
+.card-code {
+    font-family: 'Courier New', monospace;
+    font-size: 18px; /* Увеличен размер шрифта для кода */
+    color: #ffcc00; /* Ярко-желтый для контраста */
+    background-color: #333333; /* Темно-серый фон */
+    padding: 8px 15px; /* Увеличены отступы для удобства */
+    border-radius: 5px;
+    word-wrap: break-word;
+    font-weight: bold; /* Увеличена жирность шрифта */
+}
+
+/* Стили для изображения, если оно добавляется в карточку */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .col {
+        max-width: 100%;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-price {
+        font-size: 14px;
+    }
+}
