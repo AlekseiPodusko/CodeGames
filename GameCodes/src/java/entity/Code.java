@@ -30,7 +30,7 @@ public class Code implements Serializable {
     private String salt;//Для шифровки вопроса
     @ManyToOne
     @JoinColumn(name = "product_id")  // предполагается, что связь идет через поле id
-    public Product game;
+    public Product product ;
 
     
 
@@ -48,10 +48,10 @@ public class Code implements Serializable {
         this.code = code;
     }
     public Product  getGame(){
-        return game;
+        return product ;
         }
-    public void setGame(Product  game){
-        this.game = game;
+    public void setGame(Product  product ){
+        this.product  = product ;
     }
     
     public String getPurchase(){
@@ -72,7 +72,7 @@ public class Code implements Serializable {
     public String toString() {
         return "Code{" + "id=" + id + 
                 ", code=" + code + 
-                ", game=" + game + 
+                ", product =" + product  + 
                 ", purchase=" + purchase +
                 ", salt=" + salt +'}';
     }
@@ -82,7 +82,7 @@ public class Code implements Serializable {
         int hash = 7;
         hash = 13 * hash + Objects.hashCode(this.id);
         hash = 13 * hash + Objects.hashCode(this.code);
-        hash = 13 * hash + Objects.hashCode(this.game);
+        hash = 13 * hash + Objects.hashCode(this.product );
         hash = 13 * hash + Objects.hashCode(this.purchase);
         hash = 13 * hash + Objects.hashCode(this.salt);
         return hash;
@@ -101,7 +101,7 @@ public class Code implements Serializable {
         if (!Objects.equals(this.code, other.code)) {
             return false;
         }
-        if (!Objects.equals(this.game, other.game)) {
+        if (!Objects.equals(this.product , other.product )) {
             return false;
         }
         if (!Objects.equals(this.purchase, other.purchase)) {
