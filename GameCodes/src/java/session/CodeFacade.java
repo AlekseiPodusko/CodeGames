@@ -23,15 +23,17 @@ public class CodeFacade extends AbstractFacade<Code> {
         super(Code.class);
     }
 
-    public Code findFreeCodeByProduct(Product product) {
+public Code findFreeCodeByProduct(Product product) {
     try {
-        return em.createQuery("SELECT c FROM Code c WHERE c.game = :product AND c.purchase = 'no'", Code.class)
+        return em.createQuery("SELECT c FROM Code c WHERE c.product = :product AND c.purchase = 'no'", Code.class)
                  .setParameter("product", product)
+                 .setMaxResults(1)
                  .getSingleResult();
-    } catch (Exception e) {
+    } catch (NoResultException e) {
         return null;
     }
 }
+
     
 
 }
